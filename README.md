@@ -55,7 +55,7 @@ source venv/bin/activate
 
 ### 3. Install Dependencies
 ```bash
-pip install -r requirements_sme.txt
+pip install -r requirements.txt
 ```
 
 ### 4. Run the Streamlit Dashboard
@@ -69,7 +69,7 @@ After executing, the dashboard will open automatically in your browser at `http:
 ## 📁 Project Structure
 
 * `app.py`: The main script containing the Streamlit UI design, styling wrappers, scoring engines, and visualization codes.
-* `requirements_sme.txt`: Dependency configurations.
+* `requirements.txt`: Dependency configurations.
 * `.gitignore`: Excluded environment and cache files.
 
 ---
