@@ -1,5 +1,7 @@
 # ⬡ FinScan — SME Financial Health Scanner
 
+🚀 **Live Demo:** [https://finscan-ammksonnmpwjj8nnnf6ixa.streamlit.app/](https://finscan-ammksonnmpwjj8nnnf6ixa.streamlit.app/)
+
 **FinScan** is a real-time risk scoring, anomaly detection, and compliance monitoring dashboard designed for Small and Medium Enterprises (SMEs). Built with **Streamlit** and **Plotly**, it provides a premium, responsive dark-themed interface to scan corporate profiles, evaluate operational metrics, and generate forward-looking projections.
 
 ---
