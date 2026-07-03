@@ -782,6 +782,85 @@ with col_h:
     )
     st.plotly_chart(fig_gauge, use_container_width=True)
 
+# ─── ABOUT SECTION ───────────────────────────────────────────────────────────
+st.markdown("<br><br>", unsafe_allow_html=True)
+with st.expander("⬡ About FinScan — Platform & Scoring Methodology", expanded=False):
+    st.markdown("""
+    <div style="padding: 1rem 0;">
+      <h3 style="color:#00D4AA;margin-top:0;font-family:'Outfit';">About the Platform</h3>
+      <p style="color:rgba(232,236,244,0.45);font-size:0.9rem;line-height:1.6;">
+        <strong>FinScan</strong> is an advanced financial intelligence platform designed for Small and Medium Enterprises (SMEs). 
+        The platform aggregates financial profiles, transaction patterns, and compliance histories to generate a 
+        comprehensive risk assessment, giving business owners and analysts clear insights into financial stability and regulatory standing.
+      </p>
+      
+      <h4 style="color:#FFF;margin-top:1.5rem;font-family:'Outfit';">Scoring Methodology</h4>
+      <p style="color:rgba(232,236,244,0.45);font-size:0.85rem;line-height:1.5;">
+        The FinScan health score (ranging from 0 to 100) is evaluated dynamically based on five core pillars:
+      </p>
+      <table style="width:100%;border-collapse:collapse;margin:1rem 0;font-size:0.85rem;color:#E8ECF4;">
+        <thead>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06);color:#00D4AA;">
+            <th style="padding:8px;text-align:left;">Pillar</th>
+            <th style="padding:8px;text-align:left;">Weight</th>
+            <th style="padding:8px;text-align:left;">Key Metrics Evaluated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+            <td style="padding:8px;font-weight:600;">💰 Profitability</td>
+            <td style="padding:8px;">25%</td>
+            <td style="padding:8px;">Net profit margin levels relative to monthly revenues.</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+            <td style="padding:8px;font-weight:600;">📊 Liquidity & Leverage</td>
+            <td style="padding:8px;">20%</td>
+            <td style="padding:8px;">Operating cash runway (reserves vs. monthly burn) and debt-to-revenue ratio.</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+            <td style="padding:8px;font-weight:600;">📋 Compliance Posture</td>
+            <td style="padding:8px;">25%</td>
+            <td style="padding:8px;">GST filing patterns, KYC/KYB completion, audits, and AML training logs.</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+            <td style="padding:8px;font-weight:600;">⚡ Transaction Health</td>
+            <td style="padding:8px;">15%</td>
+            <td style="padding:8px;">Large-value transaction ratios, cross-border volume, and late payment frequency.</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+            <td style="padding:8px;font-weight:600;">🛡️ Operational Maturity</td>
+            <td style="padding:8px;">15%</td>
+            <td style="padding:8px;">Years in operation, employee count, and audit rigor.</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h4 style="color:#FFF;margin-top:1.5rem;font-family:'Outfit';">Risk Classifications</h4>
+      <div style="display:grid;grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));gap:10px;margin-top:0.8rem;">
+        <div style="background:rgba(0,212,170,0.06);border:1px solid rgba(0,212,170,0.2);padding:10px;border-radius:8px;">
+          <strong style="color:#00D4AA;font-size:0.85rem;">Low Risk (A/A+)</strong>
+          <p style="color:rgba(232,236,244,0.45);font-size:0.75rem;margin:4px 0 0 0;">Score &ge; 75. High stability, excellent compliance, clean transaction profiles.</p>
+        </div>
+        <div style="background:rgba(74,159,255,0.06);border:1px solid rgba(74,159,255,0.2);padding:10px;border-radius:8px;">
+          <strong style="color:#4A9FFF;font-size:0.85rem;">Moderate Risk (B/B+)</strong>
+          <p style="color:rgba(232,236,244,0.45);font-size:0.75rem;margin:4px 0 0 0;">Score 55-74. Solid financials but with key watch areas like debt or minor late filings.</p>
+        </div>
+        <div style="background:rgba(255,184,48,0.06);border:1px solid rgba(255,184,48,0.2);padding:10px;border-radius:8px;">
+          <strong style="color:#FFB830;font-size:0.85rem;">Elevated Risk (C)</strong>
+          <p style="color:rgba(232,236,244,0.45);font-size:0.75rem;margin:4px 0 0 0;">Score 45-54. Action needed. Thin margins, high leverage, or compliance delays.</p>
+        </div>
+        <div style="background:rgba(255,71,87,0.06);border:1px solid rgba(255,71,87,0.2);padding:10px;border-radius:8px;">
+          <strong style="color:#FF4757;font-size:0.85rem;">Critical Risk (D/F)</strong>
+          <p style="color:rgba(232,236,244,0.45);font-size:0.75rem;margin:4px 0 0 0;">Score &lt; 45. High risk exposure. Urgent financial restructuring or compliance audits needed.</p>
+        </div>
+      </div>
+      
+      <p style="font-size:0.75rem;color:rgba(232,236,244,0.18);margin-top:1.5rem;text-align:center;">
+        Designed for Yashodip2802/FinScan &middot; Local & Private Analysis &middot; Built using Python, Streamlit, and Plotly
+      </p>
+    </div>
+    """, unsafe_allow_html=True)
+
 # ─── FOOTER ──────────────────────────────────────────────────────────────────
 st.markdown(f"""
 <div class="footer">
