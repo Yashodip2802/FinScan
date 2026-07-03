@@ -60,7 +60,7 @@ pip install -r requirements_sme.txt
 
 ### 4. Run the Streamlit Dashboard
 ```bash
-streamlit run "sme_scanner (3).py"
+streamlit run app.py
 ```
 After executing, the dashboard will open automatically in your browser at `http://localhost:8501`.
 
@@ -68,7 +68,7 @@ After executing, the dashboard will open automatically in your browser at `http:
 
 ## 📁 Project Structure
 
-* `sme_scanner (3).py`: The main script containing the Streamlit UI design, styling wrappers, scoring engines, and visualization codes.
+* `app.py`: The main script containing the Streamlit UI design, styling wrappers, scoring engines, and visualization codes.
 * `requirements_sme.txt`: Dependency configurations.
 * `.gitignore`: Excluded environment and cache files.
 
